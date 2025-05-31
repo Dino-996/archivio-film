@@ -1,38 +1,26 @@
-# Sistema di Gestione Prestiti Biblioteca
+# Sistema di Gestione Film Videoteca
 
-Applicazione Java per la gestione dei prestiti librari, sviluppata con Vaadin e Spring Boot.
+Applicazione Java per la gestione di film di una videoteca, sviluppata con Vaadin e Spring Boot.
 
 ## Funzionalità
 
 ### Casi d'Uso Implementati
 
 1. **Caricamento Archivio**
-   - Caricamento dati della biblioteca (mock object o file JSON)
-   - Per livello intermedio: Caricamento da file JSON selezionato dall'operatore
+   - Caricamento dati dell'archivio film (mock object o file JSON)
 
-2. **Ricerca Utenti**
-   - Ricerca utenti per nome e/o cognome (entrambi i campi opzionali)
-   - Visualizzazione risultati in tabella con:
-     - Username, nome, cognome
-     - Totale libri presi in prestito
-     - Libri attualmente in prestito
-   - Risultati ordinati per libri presi in prestito (crescente), poi per libri non restituiti (crescente)
+2. **Ricerca Film**
+   - Ricerca film per titolo
+   - Visualizzazione risultati in tabella 
+   - Risultati ordinati per data di uscita crescente/decrescente
 
-3. **Gestione Prestiti**
-   - Selezione utente per visualizzare dettagli
-   - Visualizzazione libri raggruppati per autore (ordinati per conteggio decrescente)
-   - Aggiunta nuovo prestito (titolo libro, autore, data inizio)
-   - Gestione automatica restituzioni se utente ha >3 libri non restituiti
-   - Gestione errori per dati non validi
+3. **Visualizza Dettagli Film**
+   - Selezione film per visualizzare dettagli
+   - Visualizzazione attori
 
 4. **Verifica Archivio**
-   - Controllo libri presi in prestito da >6 mesi e non restituiti
-   - Verifica che tali libri abbiano autori tutti diversi
+   - Controllo film duplicati
    - Visualizzazione risultato verifica
-
-5. **Funzionalità Livello Intermedio**
-   - Ricerca autore con durata media prestiti più alta
-   - Caricamento archivio da JSON
 
 ## Dettagli Tecnici
 
@@ -40,16 +28,14 @@ Applicazione Java per la gestione dei prestiti librari, sviluppata con Vaadin e 
 - **Sistema di Build**: Gradle
 - **Testing**: JUnit 5
 - **Logging**: SLF4J + Logback
-- **Lombok**: Per riduzione codice boilerplate
 
 ## Dipendenze
 
 - Spring Boot Starter Web
 - Vaadin
 - SLF4J API
-- Logback Classic
+- Logback Classic & Core
 - JUnit Jupiter
-- Lombok
 
 ## Come Eseguire
 
