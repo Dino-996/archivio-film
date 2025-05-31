@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/home/dino/Projects/archivio-film/./src/main/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/home/dino/Projects/archivio-film/./src/main/frontend/generated/jar-resources",
+  "staticOutput": "/home/dino/Projects/archivio-film/build/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/home/dino/Projects/archivio-film/build/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/home/dino/Projects/archivio-film/build/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/home/dino/Projects/archivio-film/build/dev-bundle/webapp",
+  "devBundleStatsOutput": "/home/dino/Projects/archivio-film/build/dev-bundle/config",
+  "jarResourcesFolder": "/home/dino/Projects/archivio-film/./src/main/frontend/generated/jar-resources",
+  "themeName": "my-theme",
+  "clientServiceWorkerSource": "/home/dino/Projects/archivio-film/build/sw.ts",
+  "pwaEnabled": true,
+  "offlineEnabled": true,
+  "offlinePath": "'.'"
+}
