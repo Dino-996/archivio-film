@@ -1,48 +1,48 @@
-# Library Rental System
+# Sistema di Gestione Prestiti Biblioteca
 
-A Java application for managing book rentals in a library, built with Vaadin and Spring Boot.
+Applicazione Java per la gestione dei prestiti librari, sviluppata con Vaadin e Spring Boot.
 
-## Features
+## Funzionalità
 
-### Use Cases Implemented
+### Casi d'Uso Implementati
 
-1. **Operator Loads Archive**
-   - Load library data (mock object or JSON file)
-   - For intermediate level: Load from JSON file selected by operator
+1. **Caricamento Archivio**
+   - Caricamento dati della biblioteca (mock object o file JSON)
+   - Per livello intermedio: Caricamento da file JSON selezionato dall'operatore
 
-2. **Operator Searches Users**
-   - Search users by name and/or surname (both fields optional)
-   - Display results in table with:
-     - Username, name, surname
-     - Total books borrowed
-     - Books currently on loan
-   - Results ordered by total books borrowed (ascending), then by current loans (ascending)
+2. **Ricerca Utenti**
+   - Ricerca utenti per nome e/o cognome (entrambi i campi opzionali)
+   - Visualizzazione risultati in tabella con:
+     - Username, nome, cognome
+     - Totale libri presi in prestito
+     - Libri attualmente in prestito
+   - Risultati ordinati per libri presi in prestito (crescente), poi per libri non restituiti (crescente)
 
-3. **Operator Manages Rentals**
-   - Select a user to view details
-   - Show books borrowed grouped by author (ordered by count descending)
-   - Add new rental (book title, author, start date)
-   - Automatic return handling if user has >3 unreturned books
-   - Error handling for invalid data
+3. **Gestione Prestiti**
+   - Selezione utente per visualizzare dettagli
+   - Visualizzazione libri raggruppati per autore (ordinati per conteggio decrescente)
+   - Aggiunta nuovo prestito (titolo libro, autore, data inizio)
+   - Gestione automatica restituzioni se utente ha >3 libri non restituiti
+   - Gestione errori per dati non validi
 
-4. **Operator Verifies Archive**
-   - Check books borrowed >6 months ago and not returned
-   - Verify if all such books have distinct authors
-   - Display verification result
+4. **Verifica Archivio**
+   - Controllo libri presi in prestito da >6 mesi e non restituiti
+   - Verifica che tali libri abbiano autori tutti diversi
+   - Visualizzazione risultato verifica
 
-5. **Intermediate Level Features**
-   - Find author with highest average rental duration
-   - JSON archive loading functionality
+5. **Funzionalità Livello Intermedio**
+   - Ricerca autore con durata media prestiti più alta
+   - Caricamento archivio da JSON
 
-## Technical Details
+## Dettagli Tecnici
 
 - **Framework**: Vaadin + Spring Boot
-- **Build System**: Gradle
+- **Sistema di Build**: Gradle
 - **Testing**: JUnit 5
 - **Logging**: SLF4J + Logback
-- **Lombok**: For boilerplate reduction
+- **Lombok**: Per riduzione codice boilerplate
 
-## Dependencies
+## Dipendenze
 
 - Spring Boot Starter Web
 - Vaadin
@@ -51,14 +51,14 @@ A Java application for managing book rentals in a library, built with Vaadin and
 - JUnit Jupiter
 - Lombok
 
-## How to Run
+## Come Eseguire
 
-1. Build with Gradle
-2. Run Spring Boot application
-3. Access UI at `http://localhost:8080`
+1. Build con Gradle
+2. Avviare applicazione Spring Boot
+3. Accedere all'interfaccia su `http://localhost:8080`
 
-## Project Structure
+## Struttura del Progetto
 
-- `src/main/java`: Application code (MVC structure)
-- `src/test/java`: Unit tests
-- `src/main/resources`: Configuration files
+- `src/main/java`: Codice applicazione (struttura MVC)
+- `src/test/java`: Test unitari
+- `src/main/resources`: File di configurazione
